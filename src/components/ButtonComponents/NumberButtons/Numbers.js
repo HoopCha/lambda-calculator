@@ -6,6 +6,8 @@ export const Numbers = props => {
   // STEP 2 - add the imported data to state
 const [numbersState] = useState(numbers)
 
+console.log(numbers)
+
   return (
     <div>
       <div className="numbers_container">
@@ -14,7 +16,7 @@ const [numbersState] = useState(numbers)
       it any props needed by the child component*/}
 
         {numbersState.map((numbers, index) => (
-             <NumberButton key={index} numbers={numbers}/>
+             <NumberButton key={index} numbers={numbers} number={index}/>
         ))}
       </div>
     </div>
