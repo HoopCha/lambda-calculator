@@ -7,7 +7,7 @@
     padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
+    margin: 25px auto;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -16,7 +16,55 @@
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 3.5rem;
   }
+
+
+.test2 {
+    display:flex;
+}
+.test1 {
+    margin-left: 50px;
+    width: 75%;
+}
+
+.operator_container{
+    width: 25%;
+    margin-right: 90px;
+}
+
+.number_button:nth-child(10) {
+    width:180px;
+    border-radius: 40px;
+
+}
+
+.number_button, .operator_button, .special_button {
+    border: 1px solid black;
+    border-radius:50%;
+    width:80px;
+    height: 80px;
+    margin: 5px 10px;
+    font-size: 30px;
+    color:white;
+    
+}
+
+.number_button {
+    background-color:#094377;
+}
+
+.operator_button {
+    background-color: #007291;
+}
+
+.special_button {
+    background-color:#0b5d9b;
+}
+
+.logo-container {
+  margin-top:8%;
+  margin-left:8%;
+}
