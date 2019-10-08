@@ -5,9 +5,12 @@ import {OperatorButton} from "./OperatorButton";
 
 //Import your array data to from the provided data file
 
-export const Operators = () => {
+export const Operators = props => {
   // STEP 2 - add the imported data to state
   const [operatorsState] = useState(operators)
+  const [activeOperator, setActiveOperator] = useState("");
+  console.log(activeOperator.operators)
+
   return (
     <div>
       <div className="operators_container">
@@ -15,9 +18,13 @@ export const Operators = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
 
-          {operatorsState.map((operators, index) => (
-            <OperatorButton key={index} operators={operators}/>
-  ))}
+          {operatorsState.map((button, index) => (
+            <OperatorButton 
+            key={index} 
+            operators={button}
+            setActiveOperator={() => props.setOperateDisplay(button)}
+            />
+        ))}
       </div>
     </div>
   );

@@ -3,7 +3,11 @@ import React from "react";
 export const OperatorButton = props => {
   return (
     <>
-      {<button className="operator_button">{props.operators.char}</button>}
+      {<button 
+      className="operator_button"
+      onClick={() => props.setActiveOperator(props)}>
+      {props.operators.char}
+      </button>}
     </>
   );
 };
